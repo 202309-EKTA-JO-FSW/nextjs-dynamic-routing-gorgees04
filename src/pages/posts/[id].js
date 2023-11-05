@@ -37,10 +37,10 @@ export const getStaticProps = async ({ params }) => {
 const PostInfo = ({ post, comments }) => {
   return (
     <div className="flex items-center flex-col m-10">
-      <h1 className="text-4xl font-bold py-5">Post</h1>
+      <h1 className="text-4xl font-bold py-5 text-white">Post</h1>
       <Post post={post} />
       <div className=" border-b-2 border-gray-400 w-96 py-10"></div>
-      <h1 className="text-2xl font-bold pt-24">Comments</h1>
+      <h1 className="text-2xl text-white font-bold pt-24">Comments</h1>
       <div className=" text-red-600">
         {comments.map((comment) => {
           console.log(comment.postId);

@@ -11,7 +11,7 @@ export const getStaticProps = async () => {
 const Posts = ({ repo }) => {
   return (
     <div className="flex items-center flex-col">
-      <h1 className=" text-5xl">Posts</h1>
+      <h1 className=" text-5xl text-white ">Posts</h1>
       {repo.map((post) => {
         return (
           <Link
